@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Troca Imagem JS</title>
+    <script src="main.js">
+document.addEventListener('DOMContentLoaded', function() {
+        var button = document.getElementById('trocaImagem');
+        var image = document.querySelector('img');
+        var imageIndex = 0;
+        var images = ['main-qimg-08f9e63b524af5fdb7d400f78123632d-lq.jpg', 'main-qimg-f25b54e7789909f5421c12c23ce108b3-lq.jpg', 'giga-chad-meme-2.jpg']; // Replace with your image paths
+
+        button.addEventListener('click', function() {
+            image.src = images[imageIndex];
+            imageIndex = (imageIndex + 1) % images.length; // Loop back to the first image when reaching the end
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>Troca imagens</h1>
+    <p>Clique no botão abaixo para trocar a imagem!</p>
+    <img style="width: 300px; border-radius: 30px;" src="main-qimg-08f9e63b524af5fdb7d400f78123632d-lq.jpg" alt="Giga Chad">
+    <br>
+    <button id="trocaImagem">Trocar Imagem</button>
+
+    <script src="main.js">
+document.addEventListener('DOMContentLoaded', function() {
+        var button = document.getElementById('trocaImagem');
+        var image = document.querySelector('img');
+        var imageIndex = 0;
+        var images = ['main-qimg-08f9e63b524af5fdb7d400f78123632d-lq.jpg', 'main-qimg-f25b54e7789909f5421c12c23ce108b3-lq.jpg', 'giga-chad-meme-2.jpg']; // Replace with your image paths
+
+        button.addEventListener('click', function() {
+            image.src = images[imageIndex];
+            imageIndex = (imageIndex + 1) % images.length; // Loop back to the first image when reaching the end
+        });
+    });</script>
+</body>
+</html>
